@@ -1,12 +1,9 @@
 module.exports = {
      gattDefs: {
         service: [
-            { name: 'dinServ', uuid: '0xbb00' },
-            { name: 'ainServ', uuid: '0xbb10' },
             { name: 'weatherServ', uuid: '0xbb80' }
         ],
         characteristic: [
-            { name: 'ainMeasPeriod', uuid: '0xbb11', params: ['period'], types: ['uint8'] },
             { name: 'weatherMeasPeriod', uuid: '0xbb81', params: ['period'], types: ['uint8'] },
             { name: 'micMeasPeriod', uuid: '0xbb82', params: ['period'], types: ['uint8'] }
         ]
