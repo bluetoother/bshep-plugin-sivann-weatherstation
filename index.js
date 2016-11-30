@@ -16,10 +16,7 @@ module.exports = {
         var isMine = false;
 
         if (basicInfo.manufacturer === 'sivann' &&
-            basicInfo.model === 'WeatherStation' &&
-            basicInfo.fwRev === 'v1.0.0' && 
-            basicInfo.hwRev === 'v1.0.0' &&
-            basicInfo.swRev === 'v1.0.0')
+            basicInfo.devName === 'Weather Station')
             isMine = true;
 
         return isMine;
